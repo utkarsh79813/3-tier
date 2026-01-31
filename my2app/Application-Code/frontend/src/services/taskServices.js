@@ -6,7 +6,7 @@ export function getTasks() {
 }
 
 export function addTask(task) {
-    return axios.post(apiUrl, task);
+  return axios.post(apiUrl, { task });
 }
 
 export function updateTask(id, task) {
