@@ -15,7 +15,7 @@ spec:
         class: backend
     spec:
       imagePullSecrets:
-      - env-secret
+      - name: env-secret
       containers:
       - name: backend-containers
         image: 759316875749.dkr.ecr.us-east-2.amazonaws.com/backend/node

@@ -5,7 +5,7 @@ metadata:
 spec:
   accessModes:
   - ReadWriteOnce
-  storageClassName: mongo-sc
+  storageClassName: mongodb-sc
   capacity:
     storage: 1Gi
   hostPath:
@@ -20,7 +20,7 @@ metadata:
 spec:
   accessModes:
   - ReadWriteOnce
-  storageClassName: mongo-sc
+  storageClassName: mongodb-sc
   capacity:
     storage: 1Gi
   hostPath:

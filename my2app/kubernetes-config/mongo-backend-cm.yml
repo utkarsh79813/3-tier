@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: app-cm
 data:
-  MONGO_CONN_STR: mongodb://mongo-db:27017/devops_project
+  MONGO_CONN_STR: mongodb://mongo-db-svc:27017/devops_project?authSource=admin
   USE_DB_AUTH: "true"
-  REACT_APP_BACKEND_URL: http://localhost:8080/api/tasks
+  REACT_APP_BACKEND_URL: http://backend-svc:3500/api/tasks
